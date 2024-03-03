@@ -1,0 +1,26 @@
+{
+  "name": "workers",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "_dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify src/index.tsx"
+  },
+  "dependencies": {
+    "hono": "^4.0.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "y-durableobjects": "^0.1.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "@hono/vite-cloudflare-pages": "^0.2.4",
+    "@hono/vite-dev-server": "^0.8.1",
+    "@types/react": "18.2.61",
+    "@types/react-dom": "18.2.19",
+    "vite": "^5.0.12",
+    "vite-plugin-cloudflare-functions": "latest",
+    "wrangler": "^3.25.0",
+    "y-websocket": "*"
+  }
+}
